@@ -11,14 +11,14 @@ function tienda() {
         naranja = 0
         producto = 0
         while ((producto !== "fin") && (producto !== "salir")) {
-            producto = prompt("Ingrese los productos que desee consumir uno por uno. Cuando termine ingrese 'fin' o 'salir'\n1 Manzana\n1 Banana\n1 Naranja").toLowerCase().trim()
-            if (producto === "manzana") {
+            producto = prompt("Ingrese los productos que desee consumir uno por uno. Cuando termine ingrese 'fin' o 'salir'\n1)Manzana\n2)Banana\n3)Naranja").toLowerCase().trim()
+            if ((producto === "manzana") || (producto == 1)) {
                 manzana++
             }
-            if (producto === "banana") {
+            if ((producto === "banana") || (producto == 2)) {
                 banana++
             }
-            if (producto === "naranja") {
+            if ((producto === "naranja") || (producto == 3)) {
                 naranja++
             }
         }
